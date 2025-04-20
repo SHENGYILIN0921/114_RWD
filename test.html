@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <canvas id="myChart" width="400" height="200"></canvas>
+    <script>
+    var ctx = document.getElementById("myChart");
+    var chart = new Chart(ctx, {
+      type: "bar", // 圖表類型
+      data: {
+        labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"], //顯示區間名稱
+        datasets: [
+          {
+            label: "標籤名稱", // tootip 出現的名稱
+            data: [12, 19, 3, 5, 6, 3], // 資料
+            backgroundColor: [
+              "rgba(255, 99, 132, 0.2)", // 第一個 bar 顏色
+              "rgba(54, 162, 235, 0.2)", // 第二個 bar 顏色
+              "rgba(255, 206, 86, 0.2)", // 第三個 bar 顏色
+              "rgba(75, 192, 192, 0.2)", // 第四個 bar 顏色
+              "rgba(153, 102, 255, 0.2)", // 第五個 bar 顏色
+              "rgba(255, 159, 64, 0.2)" // 第六個 bar 顏色
+            ],
+            borderColor: [
+              "rgba(255,99,132,1)", // 第一個 bar 外框線顏色
+              "rgba(54, 162, 235, 1)", // 第二個 bar 外框線顏色
+              "rgba(255, 206, 86, 1)", // 第三個 bar 外框線顏色
+              "rgba(75, 192, 192, 1)", // 第四個 bar 外框線顏色
+              "rgba(153, 102, 255, 1)", // 第五個 bar 外框線顏色
+              "rgba(255, 159, 64, 1)" // 第六個 bar 外框線顏色
+            ],
+            borderWidth: 1 // 外框線寬度
+          }
+        ]
+      }
+    });
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>

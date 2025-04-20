@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a {
+            color: blue;
+        }
+
+        a:link {
+            color: rgb(60, 255, 0);
+        }
+
+        a:visited {
+            color: rgb(141, 135, 132);
+        }
+
+        a:hover> {
+            color: rgb(238, 255, 0);
+        }
+
+        /* table.demo tr.odd{
+        background-color: lightblue;
+    } */
+    table.demo3 tr{
+            background-color: lightgoldenrodyellow;
+        }
+        table.demo3 tr:nth-child(5) {
+            background-color: lightblue;
+        }
+
+        table.demo2 tr{
+            background-color: lightgoldenrodyellow;
+        }
+        table.demo2 tr:not(.odd) {
+            background-color: lightblue;
+        }
+        table.demo1 tr:not(.odd) {
+            background-color: lightblue;
+        }
+
+        table.demo1 tr.odd {
+            background-color: lightcoral;
+        }
+        .demo5:focus{
+            background-color: yellow;
+        }
+        .demo5:hover{
+            background-color:red;
+        }
+     
+    </style>
+
+
+</head>
+
+<body> 
+<input type:"text" name="" class="demo5">
+<table border="1" width="300" cellspacing="0" class="demo3">
+    <tr>
+        <td>Loki</td>
+        <td>Loki</td>
+    </tr>
+    <tr class="odd">
+        <td>Loki</td>
+        <td>Loki</td>
+    </tr>
+    <tr>
+        <td>Loki</td>
+        <td>Loki</td>
+    </tr>
+    <tr class="odd">
+        <td>Loki</td>
+        <td>Loki</td>
+    </tr>
+    <tr>
+        <td>Loki</td>
+        <td>Loki</td>
+    </tr>
+</table>
+<hr>
+    <table border="1" width="300" cellspacing="0" class="demo2">
+        <tr>
+            <td>Loki</td>
+            <td>Loki</td>
+        </tr>
+        <tr class="odd">
+            <td>Loki</td>
+            <td>Loki</td>
+        </tr>
+        <tr>
+            <td>Loki</td>
+            <td>Loki</td>
+        </tr>
+        <tr class="odd">
+            <td>Loki</td>
+            <td>Loki</td>
+        </tr>
+        <tr>
+            <td>Loki</td>
+            <td>Loki</td>
+        </tr>
+    </table>
+    <hr>
+    <table border="1" width="300" cellspacing="0" class="demo1">
+        <tr>
+            <td>Loki</td>
+            <td>Loki</td>
+        </tr>
+        <tr class="odd">
+            <td>Loki</td>
+            <td>Loki</td>
+        </tr>
+        <tr>
+            <td>Loki</td>
+            <td>Loki</td>
+        </tr>
+        <tr class="odd">
+            <td>Loki</td>
+            <td>Loki</td>
+        </tr>
+        <tr>
+            <td>Loki</td>
+            <td>Loki</td>
+        </tr>
+    </table>
+    <a href="https://www.google.com.tw/?hl=zh_TW">google</a>
+</body>
+
+</html>

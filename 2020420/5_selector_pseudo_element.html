@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            color: red;
+            
+        }
+        div::before{
+            content:"";
+            background-color: purple;
+            display: inline-block;
+            width: 1rem;
+            height: 1rem;
+            transform:scale(0.5) rotate(45deg)
+        }
+        div::after {
+            /* content:"wow"; */
+            content:attr(title);
+        }
+        .demo3::first-letter{
+            color: red;
+            font-weight:bold;
+            font-size: 2rem;
+        }
+        .demo3::first-line{
+            text-decoration: dashed underline;
+        }
+        .demo3::selection{
+            background: lightblue;
+            color:lightcyan;
+        }
+    </style>
+</head>
+<body>
+    <p class="demo3">Ger200sdffeewfwefwe
+        wefwfw
+        fewfw
+        efewfwefwewef  </p>
+    <hr>
+    <div title="HEY"> Test Test</div>
+    <div title="HEY"> Test Test</div>
+    <h1>Teset</h1>
+</body>
+</html>

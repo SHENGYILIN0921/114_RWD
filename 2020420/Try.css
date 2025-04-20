@@ -1,0 +1,24 @@
+@import url('loki_header_1.css');
+@import url('loki_nav_1.css');
+@import url('loki_menu_1.css');
+@import url('loki_footer_1.css');
+
+h1,
+h2 {
+    color: greenyellow;
+    font-size: 120px;
+    background-color: rgb(92, 104, 90);
+    padding: 10px;
+}
+
+/* h1{
+        color: greenyellow;
+        } */
+/* h2{
+        color: rgb(255, 217, 47);
+        } */
+P {
+    color: red;
+    font-size: 120px;
+    background-color: rgb(92, 104, 90);
+}
