@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    table td{
+        width: 200px;
+        height: 200px;
+     }
+     .a{
+        background-color: brown;        
+     }
+     .b{
+        background-image: url("https://picsum.photos/300/200/?random=10" ) ;
+        background-size: cover;
+     }
+
+     .c{
+        background-repeat: repeat-x;
+        background-size: 50px;
+        background-image: url("https://picsum.photos/300/200/?random=10" );
+        
+     }
+     .d{
+        background-repeat: repeat-y;
+        background-size: 50px;
+        background-image: url("https://picsum.photos/300/200/?random=10" );
+        
+     }
+     .e{
+        background-repeat:no-repeat;
+        background-size: 50px;
+        background-position: center;
+        background-image: url("https://picsum.photos/300/200/?random=10" );
+        
+     }
+     .f{
+        background-color: gold;
+        background-repeat:no-repeat;
+        background-size: 50px;
+        background-position: center;
+        background-image: url("https://picsum.photos/300/200/?random=10" ) ;
+        
+     }
+     .g{
+            background-image: url("https://picsum.photos/300/200/?random=10" ) no-repeat top,
+            url("https://picsum.photos/300/200/?random=11" ) no-repeat center,
+            url("https://picsum.photos/300/200/?random=10" ) no-repeat bottom;
+     }
+     .h{
+        background-image: linear-gradient(90deg,rgb(42, 44, 155) 0%, rgb(87, 93, 199) 50%, rgb(83, 91, 237) 100%);
+        
+     }
+     .i{
+         background: radial-gradient(circle, rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%);
+     }
+
+    </style>
+    
+</head>
+<body>
+    <table border="1" width = "500" cellspacing="0" cellpadding="5">
+        <caption>
+          Front-end web developer course 2021
+        </caption>
+   
+        <tbody>
+          <tr>
+            <td class="a"></td>
+            <td  class="b"></td>
+            <td class="c"></td>
+          </tr>
+          <tr>
+            <td class="d"></td>
+            <td class="e"></td>
+            <td class="f"></td>
+          </tr>
+          <tr>
+            <td class="g"></td>
+            <td class="h" ></td>
+            <td class="i"></td>
+          </tr>
+        </tbody>
+   
+      </table>
+ <hr>     
+
+</body>
+</html>
