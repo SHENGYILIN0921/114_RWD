@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        body{
+            margin:0;
+            background: #333;
+            color:white;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .base{
+            width: 100px;
+            height: 100px;
+            background: red;
+            position:relative;
+            animation: demo1 1s linear 0s 2 forwards ;
+        }
+        @keyframes demo1{
+            from{
+                background: red;
+                left:-300%;
+            }
+            50%{
+                background: yellow;
+                left:-300%;
+            }
+            
+            to {
+                background: red;
+                left:300%;
+            }
+        }
+        .button{
+            width: 100px;
+            height: 50px;
+            background: orange;
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor:pointer;
+            user-select:none;
+            position: relative;
+            &::before {
+            content:'';
+            background:#3333;
+            position:absolute;
+            width:100%;
+            height:100%;
+            background:linear-gradient(145deg,transparent 35%,#fff8 50%,transparent 55%);
+            
+            /* border: 1px solid red; */
+            opacity:0.3;
+            transform: translate(calec(-100%/3));
+            animation: demo2 2s ease-in infinite alternate;
+            }
+         
+        }
+        .loading{
+            position: relative;
+            padding-top:40px;
+            /* width:300px; */
+            text-align: center;
+            
+          
+            &::before{
+                content: '';
+                /* position: absolute; */
+                box-sizing: border-box;
+                border: 1px solid #fff;
+                width: 300px;
+                height: 20px;
+                bottom:20px;
+                right: 100px;
+                left:-100px;
+          
+                text-align: center;
+               }
+                &::after{
+                    background:red;
+                    animation: demo3 5s infinite;
+                }
+                
+                @keyframes demo3 {
+                    from{
+                        width: 0%;
+                    }
+                    to{
+                        width:100%
+                    }
+                    
+                }
+ 
+           
+            
+            /* border: 1px solid red; */
+           
+         
+        }
+        @keyframes demo2 {
+                from{
+                    left:-25%;
+                }
+                to{
+                    left:25%
+                }
+            }
+    </style>
+</head>
+<body>
+    <div class="base">Hell world</div>
+    <div class="button">button </div>
+    <div class="loading">Loading</div>
+    <!-- <button>button</button> -->
+</body>
+</html>
